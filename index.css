@@ -1,0 +1,229 @@
+/* Root */
+:root{
+      /**
+   * colors
+   */
+
+  --imperial-red_12: hsla(357, 86%, 57%, 0.12);
+  --pacific-blue_12: hsla(188, 78%, 41%, 0.12);
+  --davys-gray_12: hsla(210, 9%, 31%, 0.12);
+  --imperial-red: hsl(357, 86%, 57%);
+  --sonic-sliver: hsl(0, 0%, 47%);
+  --pacific-blue: hsl(188, 78%, 41%);
+  --blue-ryb_12: hsla(220, 100%, 50%, 0.12);
+  --space-cadet: hsl(220, 41%, 20%);
+  --eerie-black: hsl(214, 10%, 13%);
+  --davys-gray: hsl(210, 9%, 31%);
+  --emerald_12: hsla(144, 62%, 53%, 0.12);
+  --cool-gray: hsl(225, 11%, 59%);
+  --cultured: hsl(225, 20%, 96%);
+  --blue-ryb: hsl(220, 100%, 50%);
+  --black_08: hsla(0, 0%, 0%, 0.06);
+  --black_12: hsla(0, 0%, 0%, 0.12);
+  --coral_12: hsla(15, 100%, 65%, 0.12);
+  --sunglow: hsl(44, 100%, 61%);
+  --emerald: hsl(144, 62%, 53%);
+  --onyx-2: hsl(210, 10%, 23%);
+  --coral: hsl(15, 100%, 65%);
+  --white: hsl(0, 0%, 100%);
+  --onyx: hsl(207, 8%, 21%);
+
+   /**
+   * typography
+   */
+
+   --ff-vietnam: "Be Vietnam Pro", sans-serif;
+
+   --fs-1: 1.563rem;
+   --fs-2: 1.5rem;
+   --fs-3: 1.25rem;
+   --fs-4: 1.078rem;
+   --fs-5: 1rem;
+   --fs-6: 0.938rem;
+   --fs-7: 0.875rem;
+   --fs-8: 0.844rem;
+   --fs-9: 0.813rem;
+   --fs-10: 0.769rem;
+ 
+   --fw-500: 500;
+   --fw-600: 600;
+
+    /**
+   * shadow
+   */
+
+  --shadow-1: 0 12px 20px hsla(210, 10%, 23%, 0.07);
+  --shadow-2: 0 2px 10px hsla(0, 0%, 0%, 0.04);
+  --shadow-3: 0 2px 20px var(--black_08);
+
+  
+}
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  li { list-style: none; }
+  
+  a { text-decoration: none; }
+  
+  a,
+  img,
+  span,
+  data,
+  time,
+  input,
+  button,
+  span.icon { display: block; }
+  
+  button {
+    font: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  html {
+    font-family: var(--ff-vietnam);
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: var(--cultured);
+  }
+  
+  :focus-visible {
+    outline: 2px solid var(--onyx);
+    outline-offset: 1px;
+  }
+  
+  ::-webkit-scrollbar { width: 10px; }
+  
+  ::-webkit-scrollbar-track { background: hsl(0, 0%, 95%); }
+  
+  ::-webkit-scrollbar-thumb { background: hsl(0, 0%, 80%); }
+  
+  ::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
+  
+  /*  */
+  .header{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    background-color: #fff;
+  }
+  .nav{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+  }
+  .left{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo{
+    display: flex;
+    align-items: center;
+    width: 30%;
+  }
+  .logo-image{
+    width: 30%;
+    padding: 3px 0px 3px 0px;
+  }
+  .logo-image>img{
+    width: 100%;
+    border-radius: 50%;
+  }
+  .logo h3{
+    margin-left: 12px;
+    font-weight: var(--fw-600);
+    font-family: var(--ff-vietnam);
+    font-size: 16px;
+  }
+  .search{
+    width: 60%;
+    position: relative;
+  }
+  .fa-magnifying-glass{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: var(--davys-gray);
+  }
+  .search>input{
+    width: 100%;
+    padding: 8px;
+    border-radius: 20px;
+    border: 2px solid var(--davys-gray_12);
+    outline: none;
+    background-color: var(--davys-gray_12);
+  }
+  .search>input[type="search"]::placeholder{
+    padding-left: 10px;
+    color: var(--eerie-black);
+  }
+  .search>input[type="search"]{
+    padding-left: 32px;
+    color: var(--davys-gray);
+    font-size: 14px;
+  }
+  /* right section */
+  .right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15%;
+  }
+  .notification{
+    width: 12%;
+    font-size: 18px;
+    position: relative;
+    height: 33px;
+    color: var(--davys-gray);
+  }
+  .notify{
+    position: absolute;
+    margin-left: 8px;
+    font-size: 9px;
+    background-color: var(--imperial-red);
+    color: var(--white);
+    padding: 4px;
+    border-radius: 3px;
+  }
+  .fa-bell{
+    margin-top: 12px;
+  }
+  .profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+  }
+  .name{
+    width: 45%;
+    font-size: var(--fs-10);
+    text-align: end;
+  }
+ 
+  .user-image{
+    width: 16%;
+    border-radius: 5px;
+  }
+  .user-image>img{
+    width: 100%;
+    border-radius: 5px;
+  }
+
+

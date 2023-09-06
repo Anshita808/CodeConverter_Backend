@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./demo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    </head>
+<body>  
+
+<header class="header" data-header>    
+    <div class="container">
+      <div class="drawer forword" >
+        <div class="drawer-logo">
+         <div class="drawer-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFprRJ230odCgHV6wB3fEUzwVzZnO92PyTNw&usqp=CAU" alt="logo">
+         </div>
+         <div class="close-drawer">
+          <i class="fa-solid fa-xmark"></i>
+         </div>
+        </div>
+        <!--  -->
+        <div class="drawer-nav">
+          <div class="drawer-container">
+              <ul>
+                <li><i class="fa-solid fa-house"></i>Home</li>
+                <li><i class="fa-solid fa-house"></i>Home</li>
+                <li><i class="fa-solid fa-house"></i>Home</li>
+                <li><i class="fa-solid fa-house"></i>Home</li>
+                <li><i class="fa-solid fa-house"></i>Home</li>
+                <li><i class="fa-solid fa-house"></i>Home</li>
+                <li><i class="fa-solid fa-house"></i>Home</li>
+                <li><i class="fa-solid fa-house"></i>Home</li>
+                <li><i class="fa-solid fa-house"></i>Home</li>
+                <li><i class="fa-solid fa-house"></i>Home</li>
+                <li><i class="fa-solid fa-house"></i>Home</li>
+              </ul>
+          </div>
+        </div>
+       </div>
+      <div class="logo">
+        <div class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="logo-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFprRJ230odCgHV6wB3fEUzwVzZnO92PyTNw&usqp=CAU" alt="logo">
+      </div>
+        <h3>Dashboard</h3>
+      </div>
+
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="Search for students, documents ...">
+           </div>
+
+       <div class="user-profile">
+        <div class="profile-container">
+          <div class="image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXSTblEVkkdJh15jlAbC3FpvuzCKb1o-pQQA&usqp=CAU" alt="">
+          </div>
+          <div class="user-info">
+            <p>Anshita Gupta</p>
+            <p>Admin</p>
+          </div>
+          <div class="logout">
+            <i class="fa-solid fa-power-off"></i>
+          </div>
+        </div>
+       </div>
+    </div>
+   
+</header>
+
+</body>
+
+<script>
+  let closeDrawer = document.querySelector(".fa-xmark");
+  let hamburger = document.querySelector(".fa-bars");
+  let drawer = document.querySelector(".drawer");
+
+  hamburger.addEventListener("click",()=>{
+    drawer.style.display = "block"
+
+  })
+
+  closeDrawer.addEventListener("click",()=>{
+    drawer.style.display = "none" 
+  })
+
+
+
+
+
+
+</script>
+
+</html>
