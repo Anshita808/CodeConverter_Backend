@@ -414,18 +414,19 @@ border-bottom-right-radius: 20px;
   align-items: center;
   justify-content: space-between;
 }
-.side-details>div{
+.side-details>div:first-child{
+  width: 100% !important;
   border: 1px solid red;
 }
 .side-details>div:nth-child(2){
-  width: 100%;
-  padding-left: 30px;
+  width: 100% !important;
+  padding: 0px;
+  text-align: left !important;
 }
 .side-details>div:nth-child(3){
  display: block !important;
  align-items: center;
  justify-content: center;
- border: 1px solid red !important;
 }
 .side-details button {
   width: 70%;
@@ -434,7 +435,6 @@ border-bottom-right-radius: 20px;
   font-size: 9px !important;
   color: white !important;
   background-color: rgb(75, 162, 216) !important;
-  margin-left: 33px !important;
   margin-bottom: 8px;
 }
 th,td{
@@ -457,6 +457,9 @@ tbody>tr>td:nth-child(5){
 tbody>tr>td:nth-child(5)>i{
   margin-bottom: 6px !important;
   margin-top: 8px;
+}
+.side-details>div:nth-child(2){
+  width: 100% !important;
 }
 
 
