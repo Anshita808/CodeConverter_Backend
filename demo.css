@@ -428,7 +428,7 @@ border-bottom-right-radius: 20px;
  justify-content: center;
 }
 .side-details button {
-  width: 70%;
+  width: 100% !important;
   padding: 4px !important;
   border-radius: 10px !important;
   font-size: 9px !important;
