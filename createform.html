@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./demo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+
+      .left-section{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+        padding: 6px;
+        border-radius: 3px;
+        margin-bottom: 20px;
+      }
+      
+      
+      /*  */
+      
+      
+      .side-details{
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        padding: 10px 15px;
+        
+      }
+      .side-details>div{
+        border-right: 1px solid rgb(206, 204, 204);
+        padding: 7px 10px;
+        width: 50%;
+      
+      }
+      .side-details>div:nth-child(2){
+        width: 30%;
+        position: relative;
+        overflow: hidden;
+       display: flex;
+       border: none;
+       align-items: center;
+       justify-content:space-evenly;
+       
+      }
+      
+      .side-details button{
+        border: 2px solid rgb(75, 162, 216);
+        outline: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-size: 15px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color:  rgb(75, 162, 216);
+        background-color: transparent;
+        transition: all ease 0.2s;
+        cursor: pointer;
+      }
+      .side-details button:active{
+        scale: 0.9;
+      }
+      .side-details button:nth-child(2){
+        border: 2px solid rgb(75, 162, 216);
+        outline: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-size: 15px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color:  white;
+        background-color: rgb(75, 162, 216);
+      }
+      
+     
+      .side-details>div>h5{
+        color: #666;
+        font-family: sans-serif;
+        font-size: 15px;
+        margin-bottom: 8px;
+      }
+      .side-details>div>p{
+        color: #a3a0a0;
+        font-family: sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+       
+      }
+      
+      /* create form css */
+      body {
+        background-color: var(--white);
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      
+      h3 {
+        color: #333;
+      }
+      
+      .form-container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 8px;
+        margin-top: 20px;
+        margin-bottom: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      .formfield {
+        margin-bottom: 20px;
+      }
+      
+      .formfield:last-child {
+        margin-bottom: 0;
+      }
+      
+      .text {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        margin-top: 5px;
+      }
+      
+      textarea {
+        height: 100px;
+        resize: vertical;
+      }
+      
+      select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        margin-top: 5px;
+      }
+      
+      .controls {
+            text-align: right;
+        }
+        
+        
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: #646363;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s, transform 0.3s;
+        }
+        .tooltip button{
+          transition: all ease 0.2s;
+        }
+        .tooltip button:active{
+          scale: 0.9;
+        }
+        
+        .tooltip:hover .add {
+            visibility: visible;
+            opacity: 1;
+            transform: translateX(-100%) translateY(-60px);
+            font-size: 15px;
+        }
+        .tooltip:hover .remove {
+          width: 150px;
+            visibility: visible;
+            opacity: 1;
+            transform: translateX(-10%) translateY(-60px);
+            font-size: 15px;
+        }
+        
+        .add-button, .remove-button {
+            padding: 10px 15px;
+            border: none;
+            font-size: 15px;
+            border-radius: 5px;
+            margin-right: 10px;
+            color: #fff;
+        }
+        
+        .add-button {
+            background-color: #67daa3;
+        }
+        
+        .remove-button {
+            background-color: #d26188;
+        }
+        
+        .add-button:hover, .remove-button:hover {
+            opacity: 0.8;
+        }
+
+      
+      
+      
+      button.add {
+        padding: 10px 15px;
+        border: none;
+        font-size: 15px;
+        border-radius: 5px;
+        margin-right: 10px;
+        background-color: #b4f5d6;
+        color: #00695C;
+      }
+      
+      
+      button.remove {
+        padding: 10px 15px;
+        border: none;
+        font-size: 15px;
+        border-radius: 5px;
+        margin-right: 10px;
+        background-color: #F8BBD0;
+        color: #880E4F;
+      }
+      
+      button:hover {
+        opacity: 0.8;
+      }
+      input[type="submit"] {
+        background-color:lightskyblue;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+      
+      input[type="submit"]:hover {
+        opacity: 0.8;
+      }
+      
+      </style>
+   <div class="left-section">
+    <div class="side-section">
+      <div>
+        <h3>Create Form</h3>
+      </div>
+    </div>
+    <div class="side-details">
+      <div>
+       <h5>Date -</h5>
+        <p>Time -</p>
+      </div>
+      <div>
+        <button>Download</button>
+        <button>Save Form</button>
+      </div>
+     </div>
+  
+     <!--  -->
+      <div class="form-container">
+          <form method="post">
+              <div class="formfield">
+                  <input
+                      type="text"
+                      name="form_title"
+                      class="text"
+                      size="50"
+                      placeholder="Title"
+                      required
+                  />
+                  <textarea
+                      name="form_description"
+                      class="text"
+                      size="200"
+                      placeholder="Description"
+                      required
+                  ></textarea>
+                  <input type="date" id="date" name="date" class="text" /><br />
+                  <h3>Questions</h3>
+                  <br />
+                  <select name="type_1" class="text" required>
+                      <option value="text">Short Answer</option>
+                      <option value="long_text">Long Answer</option>
+                      <option value="mcq">Multiple Choice</option>
+                      <option value="mccq">Multiple Correct Choice</option>
+                  </select>
+                  <textarea
+                      type="text"
+                      name="question_1"
+                      class="text"
+                      size="500"
+                      placeholder="Enter question text"
+                      required
+                  ></textarea>
+                  <textarea
+                      type="text"
+                      name="options_1"
+                      class="text"
+                      size="500"
+                      placeholder="Enter options (comma separated).&#10;e.g. option 1, option 2, option 3, ..."
+                      required
+                  ></textarea>
+              </div>
+              <div class="controls">
+                <div class="tooltip">
+                  <button type="button" class="add-button" onclick="addQuestion()">
+                      <i class="fa fa-plus"></i>
+                  </button>
+                  <span class="tooltiptext add" >Add Question</span>
+              </div>
+              <div class="tooltip">
+                  <button type="button" class="remove-button" onclick="removeQuestion()">
+                      <i class="fa fa-minus"></i>
+                  </button>
+                  <span class="tooltiptext remove">Remove Question</span>
+              </div>  
+                
+              </div>
+          </form>
+      </div>
+  </div>   
+  </body>
+  
+  
+  <script>
+      var formfield = document.querySelector(".formfield");
+      var counter = 2;
+  
+      function addQuestion() {
+          var newDiv = document.createElement("div");
+          newDiv.classList.add("formfield");
+  
+          var newSelect = document.createElement("select");
+          newSelect.setAttribute("name", "type_" + counter.toString());
+          newSelect.classList.add("text");
+          newSelect.innerHTML = `
+              <option value="text">Short Answer</option>
+              <option value="long_text">Long Answer</option>
+              <option value="mcq">Multiple Choice</option>
+              <option value="mccq">Multiple Correct Choice</option>
+          `;
+  
+          var newQuestionTextarea = document.createElement("textarea");
+          newQuestionTextarea.setAttribute("type", "text");
+          newQuestionTextarea.setAttribute("name", "question_" + counter.toString());
+          newQuestionTextarea.classList.add("text");
+          newQuestionTextarea.setAttribute("size", 500);
+          newQuestionTextarea.setAttribute("placeholder", "Enter question text");
+          newQuestionTextarea.required = true;
+  
+          var newOptionsTextarea = document.createElement("textarea");
+          newOptionsTextarea.setAttribute("type", "text");
+          newOptionsTextarea.setAttribute("name", "options_" + counter.toString());
+          newOptionsTextarea.classList.add("text");
+          newOptionsTextarea.setAttribute("size", 500);
+          newOptionsTextarea.setAttribute("placeholder", "Enter options (comma separated).\n e.g. option 1, option 2, option 3, ...");
+          newOptionsTextarea.required = true;
+  
+          newDiv.appendChild(newSelect);
+          newDiv.appendChild(newQuestionTextarea);
+          newDiv.appendChild(newOptionsTextarea);
+  
+          formfield.appendChild(newDiv);
+          counter++;
+      }
+  
+      function removeQuestion() {
+          if (counter > 2) {
+              var forms = document.querySelectorAll(".formfield");
+              formfield.removeChild(forms[forms.length - 1]);
+              counter--;
+          }
+      }
+  </script>
+  
+  </html>

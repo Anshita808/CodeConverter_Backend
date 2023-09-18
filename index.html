@@ -74,28 +74,165 @@
     </div>
    
 </header>
+<!-- attendance part  -->
+<div class="main-container">
+  <div class="right-section">
+    <h2>Attendance</h2>
+    <div class="right-container">
+     <div class="calendar">
+      <div class="class-selector">
+        <label for="class">Class</label>
+        <select id="class" name="class">
+          <option value="class1">Class 1</option>
+          <option value="class2">Class 2</option>
+          <option value="class3">Class 3</option>
+        </select>
+      </div>
 
+      <div class="date-selector">
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date">
+      </div>
+      
+      
+      <div class="time-selector">
+        <label for="time">Time</label>
+        <input type="time" id="time" name="time">
+      </div>
+
+      <button>Submit</button>
+    </div>
+    </div>
+    <div class="section-box">
+      <div class="course">
+        
+        <div>
+          <li><i class="fa-solid fa-book-open"></i>Course</li>
+          
+          <div class="course-info">
+            <p>Diploma in Electrical Engineering </p>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+
+        <div>
+          <li><i class="fa-solid fa-book-open"></i>Subject</li>
+          
+          <div class="course-info">
+            <p>Basics of Computer Fundamentals</p>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+
+        <div>
+          <li><i class="fa-solid fa-book-open"></i>Semester</li>
+          
+          <div class="course-info">
+            <p>Winter-sem Term 1</p>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+
+        <div>
+          <li><i class="fa-solid fa-book-open"></i>Group</li>
+          
+          <div class="course-info">
+            <p>Batch B</p>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+
+        </div> 
+     
+   
+     
+    </div>
+ 
+</div>
+<div class="left-section">
+  <div class="side-section">
+    <div>
+      <h3>Mark Attendance</h3>
+    </div>
+    <div>
+      <button><i class="fa-solid fa-download"></i>Download Ext</button>
+    </div>
+  </div>
+  <div class="side-details">
+    <div>
+     <h5>Section: Basic Of User Research(BB501)</h5>
+     <p>Class C4 Batch 2</p>
+    </div>
+    <div>
+     <h5>TIME- 10:00 AM TO 10:45 AM</h5>
+      <p>Week-3 TUESDAY-8 Sept 2023</p>
+    </div>
+    <div>
+      <button>All Present</button>
+      <button>All Absent</button>
+      <button>Save Attendance</button>
+    </div>
+   </div>
+   <!-- table section -->
+   <div class="table-list">
+    <table>
+      <thead>
+        <tr>
+          <th>Student ID</th>
+          <th>Student Name</th>
+          <th>Attendance Status</th>
+          <th>Total Att. Hours</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>12345</td>
+          <td>Monu Kumar</td>
+          <td>
+            <button class="att-btn"><i class="fa-solid fa-check"></i> Present</button>
+            <button class="att-btn"><i class="fa-solid fa-xmark"></i> Absent</button>
+          </td>
+          <td>12 Hours</td>
+          <td>
+            <span>
+              Enrolled
+            </span>
+            <i class="fa-solid fa-pen"></i>
+           <i class="fa-solid fa-square-poll-vertical"></i>
+            
+          </td>
+          
+        </tr>
+        <tr>
+          <tr>
+            <td>12345</td>
+            <td>Monu Kumar</td>
+            <td>
+              <button class="att-btn"><i class="fa-solid fa-check"></i> Present</button>
+              <button class="att-btn"><i class="fa-solid fa-xmark"></i> Absent</button>
+            </td>
+            <td>12 Hours</td>
+            <td>
+              <span>
+                Enrolled
+              </span>
+              <i class="fa-solid fa-pen"></i>
+             <i class="fa-solid fa-square-poll-vertical"></i>
+              
+            </td>
+            
+          </tr>
+        </tr>
+      </tbody>
+    </table>
+    
+   </div>
+ </div>
+
+</div>
 </body>
 
-<script>
-  let closeDrawer = document.querySelector(".fa-xmark");
-  let hamburger = document.querySelector(".fa-bars");
-  let drawer = document.querySelector(".drawer");
-
-  hamburger.addEventListener("click",()=>{
-    drawer.style.display = "block"
-
-  })
-
-  closeDrawer.addEventListener("click",()=>{
-    drawer.style.display = "none" 
-  })
-
-
-
-
-
-
-</script>
+<script src="./index.js"></script>
 
 </html>
