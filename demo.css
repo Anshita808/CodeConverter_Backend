@@ -416,7 +416,6 @@ border-bottom-right-radius: 20px;
 }
 .side-details>div:first-child{
   width: 100% !important;
-  border: 1px solid red;
 }
 .side-details>div:nth-child(2){
   width: 100% !important;
