@@ -421,12 +421,22 @@ border-bottom-right-radius: 20px;
   width: 100%;
   padding-left: 30px;
 }
+.side-details>div:nth-child(3){
+ display: block !important;
+ align-items: center;
+ justify-content: center;
+ border: 1px solid red !important;
+ padding-left: 7px !important;
+}
 .side-details button {
-  padding: 2px !important;
+  width: 70%;
+  padding: 4px !important;
   border-radius: 10px !important;
-  font-size: 7px !important;
+  font-size: 9px !important;
   color: white !important;
   background-color: rgb(75, 162, 216) !important;
+  margin-left: 33px !important;
+  margin-bottom: 8px;
 }
 
 
