@@ -779,9 +779,9 @@ tbody tr{
   
   .main-container .side-details>div:nth-child(3) {
     width: 100%;
+    padding: 1px;
     display: block;
-    align-items: center;
-    justify-content: center;
+    
   }
   
   .main-container .side-details button {
@@ -803,12 +803,14 @@ tbody tr{
   .main-container tr {
     font-size: 12px;
   }
-  
+  .table-list{
+    padding: 0;
+  }
   .main-container .att-btn {
     width: 100%;
-    padding: 5px;
+    padding: 6px 2px;
     border: none;
-    font-size: 12px;
+    font-size: 11px;
     margin-bottom: 4px;
   }
   
@@ -831,11 +833,12 @@ tbody tr{
 }
 .side-details button:nth-child(3) {
    width: 100%;
-   padding: 5px 20px;
+   padding: 5px 0px;
 }
 .side-details button{
   margin-top: 8px;
-  padding: 15px 10px;
+  padding: 19px 10px;
+  margin-left: 8px;
 }
 }
 
